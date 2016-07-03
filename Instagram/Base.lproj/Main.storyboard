@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -117,16 +118,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新しい表示名を入力" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EXx-Nd-xve">
-                                <rect key="frame" x="151" y="100" width="300" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="新しい表示名を入力" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EXx-Nd-xve">
+                                <rect key="frame" x="150" y="100" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="psc-iu-S8X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKX-6H-Vvd">
-                                <rect key="frame" x="151" y="140" width="300" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKX-6H-Vvd">
+                                <rect key="frame" x="150" y="140" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="yfc-WY-y4f"/>
                                 </constraints>
@@ -137,8 +138,8 @@
                                     <action selector="handleChangeButton:" destination="0pI-HA-Gll" eventType="touchUpInside" id="LMD-JF-pC1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY9-pr-Js6">
-                                <rect key="frame" x="151" y="190" width="300" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY9-pr-Js6">
+                                <rect key="frame" x="150" y="190" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="oX9-tz-V7T"/>
                                 </constraints>
@@ -199,8 +200,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5w-N6-lqf">
-                                <rect key="frame" x="150" y="220" width="300" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5w-N6-lqf">
+                                <rect key="frame" x="150" y="220" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="pwZ-gQ-6z4"/>
                                 </constraints>
@@ -211,8 +212,8 @@
                                     <action selector="handleLoginButton:" destination="9JI-Vm-fPj" eventType="touchUpInside" id="DYs-p5-pEf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivz-aH-eDh">
-                                <rect key="frame" x="150" y="260" width="300" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivz-aH-eDh">
+                                <rect key="frame" x="150" y="270" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="rrP-JQ-DPl"/>
                                 </constraints>
@@ -264,11 +265,64 @@
                         <viewControllerLayoutGuide type="top" id="guT-NK-bep"/>
                         <viewControllerLayoutGuide type="bottom" id="mNo-eg-m9D"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IU6-CJ-BfF" customClass="Post">
+                    <view key="view" contentMode="scaleToFill" id="IU6-CJ-BfF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aQ9-fR-H7N">
+                                <rect key="frame" x="75" y="40" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="gRF-mk-XGg"/>
+                                    <constraint firstAttribute="height" constant="120" id="uGx-ay-YoJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bel-tJ-bsB">
+                                <rect key="frame" x="150" y="180" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GyS-XL-n0Q"/>
+                                </constraints>
+                                <state key="normal" title="投稿" backgroundImage="btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlePostButton:" destination="RDz-0e-Rma" eventType="touchUpInside" id="S3G-Wi-MKG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXc-Mg-Cw1">
+                                <rect key="frame" x="150" y="230" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="dIO-2i-ifz"/>
+                                </constraints>
+                                <state key="normal" title="キャンセル" backgroundImage="btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleCancelButton:" destination="RDz-0e-Rma" eventType="touchUpInside" id="uV5-qD-cUp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="キャプション" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSx-gj-DeR">
+                                <rect key="frame" x="205" y="130" width="355" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SXc-Mg-Cw1" firstAttribute="centerX" secondItem="IU6-CJ-BfF" secondAttribute="centerX" id="Aqg-ku-lnf"/>
+                            <constraint firstItem="aQ9-fR-H7N" firstAttribute="top" secondItem="guT-NK-bep" secondAttribute="bottom" constant="20" id="Eh5-PB-E8X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uSx-gj-DeR" secondAttribute="trailing" constant="20" id="IqV-Nn-ZTA"/>
+                            <constraint firstItem="aQ9-fR-H7N" firstAttribute="leading" secondItem="IU6-CJ-BfF" secondAttribute="leadingMargin" constant="55" id="MKa-Gp-OuB"/>
+                            <constraint firstItem="uSx-gj-DeR" firstAttribute="leading" secondItem="aQ9-fR-H7N" secondAttribute="trailing" constant="10" id="bC5-LV-ghN"/>
+                            <constraint firstItem="SXc-Mg-Cw1" firstAttribute="top" secondItem="Bel-tJ-bsB" secondAttribute="bottom" constant="10" id="hTx-jy-2rc"/>
+                            <constraint firstItem="uSx-gj-DeR" firstAttribute="bottom" secondItem="aQ9-fR-H7N" secondAttribute="bottom" id="ost-rc-qP3"/>
+                            <constraint firstItem="Bel-tJ-bsB" firstAttribute="centerX" secondItem="IU6-CJ-BfF" secondAttribute="centerX" id="pM9-yK-8wy"/>
+                            <constraint firstItem="Bel-tJ-bsB" firstAttribute="top" secondItem="aQ9-fR-H7N" secondAttribute="bottom" constant="20" id="syV-hE-KKa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="aQ9-fR-H7N" id="l8V-bn-pMF"/>
+                        <outlet property="textField" destination="uSx-gj-DeR" id="Dmd-1Y-Jcm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqb-wF-usO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

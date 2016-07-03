@@ -34,6 +34,7 @@
 		251B626B1D27A3790022319A /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B626A1D27A3790022319A /* ImageSelectViewController.swift */; };
 		251B626D1D27A3F20022319A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B626C1D27A3F20022319A /* PostViewController.swift */; };
 		251B626F1D27A4DF0022319A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B626E1D27A4DF0022319A /* SettingViewController.swift */; };
+		255BF0D11D28DA9C00650ABF /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BF0D01D28DA9C00650ABF /* PostData.swift */; };
 		258120381D28C6E600BEC9E8 /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258120361D28C6E600BEC9E8 /* AdobeCreativeSDKCore.framework */; };
 		258120391D28C6E600BEC9E8 /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258120371D28C6E600BEC9E8 /* AdobeCreativeSDKImage.framework */; };
 		9E4B740760A867376D85EBAC /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90B2B3172F8E3EAB8CD7535 /* Pods_Instagram.framework */; };
@@ -70,6 +71,7 @@
 		251B626A1D27A3790022319A /* ImageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSelectViewController.swift; path = ../ImageSelectViewController.swift; sourceTree = "<group>"; };
 		251B626C1D27A3F20022319A /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		251B626E1D27A4DF0022319A /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		255BF0D01D28DA9C00650ABF /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		258120361D28C6E600BEC9E8 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
 		258120371D28C6E600BEC9E8 /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
 		A6574D4C0C052276782CF529 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				251B62521D27A2460022319A /* AppDelegate.swift */,
+				255BF0D01D28DA9C00650ABF /* PostData.swift */,
 				2501AD171D28C8A000810EF6 /* AdobeCreativeSDKImageResources.bundle */,
 				250FEB5E1D2820B000A115B3 /* Const.swift */,
 				2501AD191D28C8B300810EF6 /* AdobeCreativeSDKCoreResources.bundle */,
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				251B626D1D27A3F20022319A /* PostViewController.swift in Sources */,
+				255BF0D11D28DA9C00650ABF /* PostData.swift in Sources */,
 				251B62651D27A2B90022319A /* LoginViewController.swift in Sources */,
 				251B62551D27A2460022319A /* ViewController.swift in Sources */,
 				251B62671D27A2E60022319A /* HomeViewViewController.swift in Sources */,
