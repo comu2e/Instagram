@@ -52,7 +52,53 @@
                     <view key="view" contentMode="scaleToFill" id="ePS-kn-WbE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-lJ-Q5Z">
+                                <rect key="frame" x="150" y="80" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5JW-UL-Iog"/>
+                                </constraints>
+                                <state key="normal" title="ライブラリ" backgroundImage="btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleLibraryButton:" destination="hxN-WR-j9s" eventType="touchUpInside" id="MLl-G7-LSM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-o2-eck">
+                                <rect key="frame" x="150" y="130" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="wy4-6d-wpH"/>
+                                </constraints>
+                                <state key="normal" title="カメラ" backgroundImage="btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleCameraButton:" destination="hxN-WR-j9s" eventType="touchUpInside" id="Ecm-Ur-wok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbR-QZ-gl9">
+                                <rect key="frame" x="150" y="180" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="dIs-De-5vh"/>
+                                </constraints>
+                                <state key="normal" title="キャンセル" backgroundImage="btn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleCancelButton:" destination="hxN-WR-j9s" eventType="touchUpInside" id="JEh-1a-dgb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fbR-QZ-gl9" firstAttribute="centerX" secondItem="ePS-kn-WbE" secondAttribute="centerX" id="CB9-29-0DO"/>
+                            <constraint firstItem="5sY-o2-eck" firstAttribute="centerX" secondItem="ePS-kn-WbE" secondAttribute="centerX" id="CP5-jK-ufY"/>
+                            <constraint firstItem="kNY-lJ-Q5Z" firstAttribute="top" secondItem="aet-ye-jLm" secondAttribute="bottom" constant="60" id="JlY-CF-RQ2"/>
+                            <constraint firstItem="kNY-lJ-Q5Z" firstAttribute="centerX" secondItem="ePS-kn-WbE" secondAttribute="centerX" id="Q99-Et-BJk"/>
+                            <constraint firstItem="fbR-QZ-gl9" firstAttribute="top" secondItem="5sY-o2-eck" secondAttribute="bottom" constant="10" id="dB3-FJ-WGB"/>
+                            <constraint firstItem="5sY-o2-eck" firstAttribute="top" secondItem="kNY-lJ-Q5Z" secondAttribute="bottom" constant="10" id="gt5-0f-X9h"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Dk-Rp-kgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
