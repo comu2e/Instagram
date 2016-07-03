@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="176" y="401"/>
         </scene>
-        <!--Home View View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="P91-Td-dUg">
             <objects>
-                <viewController storyboardIdentifier="Home" id="4n5-zO-AGE" customClass="HomeViewViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="4n5-zO-AGE" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GUR-06-vYY"/>
                         <viewControllerLayoutGuide type="bottom" id="kVx-6V-csb"/>
@@ -35,8 +35,27 @@
                     <view key="view" contentMode="scaleToFill" id="f6T-hX-SzS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CW2-hr-lAq">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4n5-zO-AGE" id="kfu-c2-pb6"/>
+                                    <outlet property="delegate" destination="4n5-zO-AGE" id="L7G-OW-U1X"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CW2-hr-lAq" firstAttribute="leading" secondItem="f6T-hX-SzS" secondAttribute="leadingMargin" id="JVv-dv-Mq1"/>
+                            <constraint firstItem="CW2-hr-lAq" firstAttribute="top" secondItem="GUR-06-vYY" secondAttribute="bottom" id="Znm-aG-9mv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CW2-hr-lAq" secondAttribute="trailing" id="bnw-cq-9JZ"/>
+                            <constraint firstItem="kVx-6V-csb" firstAttribute="top" secondItem="CW2-hr-lAq" secondAttribute="bottom" id="ufR-1n-OhJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="CW2-hr-lAq" id="43R-So-puY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRp-Q0-tO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

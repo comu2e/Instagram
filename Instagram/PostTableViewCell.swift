@@ -52,4 +52,3 @@ class PostTableViewCell: UITableViewCell {
         super.layoutSubviews()
     }
 }
-}
